@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Clockify Timesheet Scraper</title>
+  <style>
+    body {
+      width: 200px;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 1rem 0;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      margin: 5px;
+      cursor: pointer;
+      border-radius: .25rem;
+      background: dodgerblue;
+      color: white;
+      outline: none;
+      border: none;
+      transition-duration: .25s;
+    }
+    button:hover {
+      background: deepskyblue;
+    }
+    p.success {
+      display: none;
+      border-radius: .25rem;
+      color: #155724;
+      background-color: #d4edda;
+      border-color: #c3e6cb;
+      padding: .5rem 1rem;
+      margin: .5rem 0;
+    }
+  </style>
+</head>
+<body>
+  <button id="scrape-button">Download CSV</button>
+  <button id="copy-button">Copy table</button>
+  <p class="success">Table copied to clipboard</p>
+  <script src="popup.js"></script>
+</body>
+</html>
